@@ -11,7 +11,7 @@ export default function BlogForm(){
     useEffect(()=>{
         if(id){
             //edit mode
-            fetch(`http://localhost:3000/api/blogs/${id}`)
+            fetch(`https://blog-app-back-end-two.vercel.app/api/blogs/${id}`)
             .then((res)=>res.json())
             .then((data)=>setForm(data))
             .catch((err)=>console.log(err))
@@ -30,7 +30,7 @@ export default function BlogForm(){
     }
     const handleSubmit= async(e)=>{
         e.preventDefault()
-        const URL = id ? `http://localhost:3000/api/blogs/${id}` : `http://localhost:3000/api/blogs`;
+        const URL = id ? `https://blog-app-back-end-two.vercel.app/api/blogs/${id}` : `https://blog-app-back-end-two.vercel.app/api/blogs`;
         const method = id ? "PUT" :"POST"
         const res = await fetch(URL,{
             method,

@@ -4,7 +4,7 @@ export default function BlogList(){
     const [blogs,setBlogs]=useState([])
     const navigate = useNavigate()
     const fetchBlogs=()=>{
-        fetch("http://localhost:3000/api/blogs")
+        fetch("https://blog-app-back-end-two.vercel.app/api/blogs")
         .then((res)=>res.json())
         .then((data)=>{
             console.log(data)
@@ -15,7 +15,7 @@ export default function BlogList(){
        fetchBlogs()
     },[])
     const handleDelete = async(id)=>{
-        await fetch(`http://localhost:3000/api/blogs/${id}`,{
+        await fetch(`https://blog-app-back-end-two.vercel.app/api/blogs/${id}`,{
             method:"DELETE",
             headers:{
                 "Authorization":`Bearer ${localStorage.getItem("token")}`

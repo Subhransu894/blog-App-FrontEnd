@@ -11,7 +11,7 @@ export default function Register(){
        try {
              e.preventDefault()
         
-            const res = await fetch("http://localhost:3000/api/auth/register",{
+            const res = await fetch("https://blog-app-back-end-two.vercel.app/api/auth/register",{
                 method:"POST",
                 headers:{
                     "Content-Type":"application/json",
