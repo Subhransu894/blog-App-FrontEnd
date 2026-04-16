@@ -43,7 +43,7 @@ export default function BlogList(){
                     </div>
                 ))
                 ) : (
-                <p>No Blogs Found</p>
+                <p>Loading...</p>
                 )}
         </div>
     )
