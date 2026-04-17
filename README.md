@@ -1,16 +1,91 @@
-# React + Vite
+# BLOG APP
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack blog making app where you can browse , add , edit , delete the blogs.
+Built with React frontend , Express/Node backend, MongoDB Database, JWT-based authentication.
 
-Currently, two official plugins are available:
+---
+# Demo Link
+[Live Demo](https://blog-app-front-end-iota.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
+## Quick Start
 
-## React Compiler
+```
+git clone https://github.com/Subhransu894/blog-App-FrontEnd.git
+cd <your-repo>
+npm install
+npm run dev # or `npm start` / `npm yarn`
+```
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Technologies
 
-## Expanding the ESLint configuration
+- React JS
+- React Router
+- Node JS
+- Express 
+- MongoDB
+- JWT
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Demo Video
+
+Watch a walkthrough (2-4 minutes) of all the major features of this app:
+[Loom Video]( https://drive.google.com/file/d/1SDFH8tuvGtTXigOKPR2hzYdS_lBeH-Ve/view?usp=sharing)
+
+---
+
+## Features
+
+**Home**
+- Display all the blog lists.
+- Add, Edit the particular blog.
+
+**Create Blog**
+- A form will appear here to fill out the new blog details.
+
+**Authentication**
+- User Signup and Login with JWT.
+- Protected routes for creating/editing/deleting blogs.
+
+---
+
+## API References
+
+### **GET /api/blogs**<br>
+
+List all blogs<br>
+Sample Response:<br>
+```
+[{_id,title,content,author}]
+```
+
+### **Get /api/blogs/:id**<br>
+
+Edit the details of the particular one blog<br>
+Sample Respnose:<br>
+```
+{_id,title,content,author}
+```
+
+### **POST /api/auth/blogs**<br>
+
+Create a new blog<br>
+Sample Response:<br>
+
+```
+{_id,title,content,author}
+```
+
+### **POST api/auth/register**<br>
+
+Register a new user<br>
+Sample Response:<br>
+```
+{userId,token}
+```
+---
+
+## Contact
+For bugs or feature request, please reach out to subhransusekhar790@gmail.com
